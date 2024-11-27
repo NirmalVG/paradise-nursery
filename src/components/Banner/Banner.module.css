@@ -1,0 +1,79 @@
+.outer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("/images/nursery.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.outer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.contentBox {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.subhead {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+}
+
+.sideHead {
+  text-align: center;
+  font-size: 1.5rem;
+  color: white;
+}
+
+.sideText {
+  text-align: center;
+  font-size: 1.1rem;
+  color: white;
+}
+
+.head {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+}
