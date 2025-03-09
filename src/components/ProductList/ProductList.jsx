@@ -2,7 +2,7 @@ import React from "react"
 import styles from "./ProductList.module.css"
 import { useDispatch } from "react-redux"
 import { useState } from "react"
-import { addItemToCart } from "../features/cart/CartSlice"
+import { addItemToCart } from "../../features/cart/CartSlice"
 
 const ProductList = () => {
   const products = [
