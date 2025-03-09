@@ -1,0 +1,60 @@
+.outer {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  align-items: center;
+  height: 100vh;
+  column-gap: 10px;
+  padding: 0px 50px;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("/public//images/nursery.jpg");
+  background-size: cover;
+  text-align: center;
+  color: white;
+}
+
+.head {
+  font-size: xx-large;
+  font-weight: bold;
+  padding-bottom: 10px;
+  color: white;
+}
+
+.outline {
+  border: 0.5px solid #fff;
+  background-color: #fff;
+  padding: 0.5px;
+  width: 10%;
+  height: 0.5px;
+  margin: auto;
+}
+
+.subhead {
+  padding: 20px 0px;
+  font-size: larger;
+}
+
+.head_text {
+  font-size: x-large;
+  padding-bottom: 20px;
+}
+
+.content {
+  font-size: large;
+}
+.started_btn {
+  background-color: green;
+  color: white;
+  padding: 10px;
+  font-size: large;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+  .outer {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 3fr;
+    row-gap: 10px;
+    height: auto;
+    padding-bottom: 20px;
+  }
+}
