@@ -6,7 +6,7 @@ import {
   clearCart,
   increaseItemQuantity,
   decreaseItemQuantity,
-} from "../../slices/cartSlice"
+} from "../features/cart/CartSlice"
 
 const Cart = () => {
   const dispatch = useDispatch()
